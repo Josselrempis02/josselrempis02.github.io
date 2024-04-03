@@ -67,6 +67,14 @@
     position: relative;
 }
 
+.skill h1{
+    color: #fff;
+}
+.text {
+    padding-top: 20px;
+    text-align: center;
+}
+
 .outer{
     height: 160px;
     width: 160px;
@@ -83,6 +91,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#fff;
     background-color: #0C0C0D;
     box-shadow: inset 4px 4px 6px -1px var(--background-color),
     /* inset -4px -4px 6px -1px rgba(255,255,255,0.7), */
@@ -94,16 +103,31 @@
 #number{
     font-weight: 600;
     color: #fff;
+    font-size: 20px;
 }
 
 circle{
     fill:none;
     stroke: var(--text-hover);
     stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: anim 2s linear forwards;
+}
+
+@keyframes anim{
+    100% {
+        stroke-dashoffset: 90;
+    }
 }
 
 svg{
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.progress-bar{
+    display: flex;
+    justify-content: space-around;
 }
