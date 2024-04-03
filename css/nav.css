@@ -21,11 +21,7 @@ a{
 
 
 body {
-  background: #b292ff;
-background: -webkit-linear-gradient(356deg, #b292ff 0%, #0c0c0d 50%, #0c0c0d 100%);
-background: linear-gradient(356deg, #b292ff 0%, #0c0c0d 50%, #0c0c0d 50%);
-  
-
+  background-color: var(--background-color);
 }
   html {
     scroll-behavior: smooth;
