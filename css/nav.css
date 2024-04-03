@@ -21,9 +21,12 @@ a{
 
 
 body {
-    background-color: var(--background-color);
-  }
+  background: #b292ff;
+background: -webkit-linear-gradient(356deg, #b292ff 0%, #0c0c0d 50%, #0c0c0d 100%);
+background: linear-gradient(356deg, #b292ff 0%, #0c0c0d 50%, #0c0c0d 50%);
   
+
+}
   html {
     scroll-behavior: smooth;
   }
@@ -221,13 +224,16 @@ section {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    gap: 1rem;
+    
   }
 
   .bx {
-    width: 30px;
+    width: 100%;
+    max-width: 50px;
+    font-size: 30px;
   }
-  .bxl-github {
+  .bxl-github,
+  .bxl-linkedin-square {
     color: #B292FF;
   }
   .section__pic-container img{
