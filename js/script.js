@@ -42,7 +42,16 @@ setInterval(() => {
 }, 30);
 
   
-
+window.onload = function() {
+  // Your code to hide the loader container after a delay
+  setTimeout(function() {
+      var loaderContainer = document.querySelector('.loader-container');
+      loaderContainer.style.opacity = '0'; // Set opacity to 0
+      setTimeout(function() {
+          loaderContainer.style.display = 'none'; // Hide the spinner overlay after transition
+      }, 500); 
+  }, 2000); 
+};
 
   
 

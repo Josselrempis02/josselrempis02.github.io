@@ -17,6 +17,10 @@
     --background-color: #0C0C0D;
 
 }
+#about-section {
+    padding-top: 10vh;
+
+}
 
 
 .about-section {
@@ -56,6 +60,7 @@
     font-size: 20px;
     line-height: 1.8;
     text-align: justify;
+    display: inline-block;
     width: 100%;
 }
 
