@@ -69,7 +69,6 @@
 .skill{
     width: 160px;
     height: 160px;
-    
     position: relative;
 }
 
@@ -167,5 +166,38 @@ svg{
 
 .progress-bar{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 150px;
+}
+
+/* Experience with */
+
+.experience-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.experience-section h1 {
+    color: var(--text);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    
+}
+
+.another-section{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.bxl-css3,
+.bxl-javascript,
+.bxl-html5 {
+    color: var(--text-hover);
+    font-size: 40px;
 }

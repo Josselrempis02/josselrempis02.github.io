@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+:root{
+    --text-hover: #B292FF;
+    --text: #fff;
+    --background-color: #0C0C0D;
+
+}
+.projects{
+
+    margin-top: 500px;
+}
+.project-container{
+    display: flex;
+}

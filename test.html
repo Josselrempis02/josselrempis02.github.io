@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+
+    </style>
+</head>
+<body>
+    <button id="open-popup">Open Popup</button>
+
+    <div class="popup" id="popup">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="image1.jpg" alt="Image 1"></div>
+          <div class="swiper-slide"><img src="image2.jpg" alt="Image 2"></div>
+          <!-- Add more swiper-slide elements with your images -->
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <span class="close" id="close-popup">&times;</span>
+    </div>
+    
+<script>
+    document.getElementById("open-popup").addEventListener("click", function() {
+  document.getElementById("popup").style.display = "block";
+});
+
+document.getElementById("close-popup").addEventListener("click", function() {
+  document.getElementById("popup").style.display = "none";
+});
+
+</script>
+</body>
+</html>
