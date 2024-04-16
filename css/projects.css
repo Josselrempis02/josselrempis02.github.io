@@ -18,8 +18,96 @@
 }
 .projects{
 
-    margin-top: 500px;
+    margin-top: 300px;
 }
 .project-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    
 }
+
+.project-img:hover img {
+    /* Your hover styles for the image */
+    opacity: 0.8; /* For example: reduce opacity */
+}
+
+.bx-link-external {
+    color: var(--text-hover);
+}
+
+.page-title{
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 28px;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.project-img img{
+  
+}
+
+
+
+
+
+span{
+    color: var(--text);
+}
+
+.github-text,
+.link-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+}
+
+
+.github-text:hover,
+.link-text:hover {
+    color: var(--text-hover);
+    text-decoration-color: var(--text-hover);
+}
+
+
+.popup-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    z-index: 9999;
+}
+
+.project-img img {
+    background-color: #ececec;
+    padding: 100px 20px 100px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    max-width: 100%;
+    width: 800px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #project-image {
+    max-width: 100%;
+    height: auto;
+    
+  }
+.image-container{
+    border-radius: 1000px;
+}
+ 
+  

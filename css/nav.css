@@ -79,8 +79,6 @@ body {
   
   a:hover {
     color: var(--text-hover);
-    text-decoration: underline;
-    text-underline-offset: 1rem;
     text-decoration-color: var(--text-hover);
   }
   

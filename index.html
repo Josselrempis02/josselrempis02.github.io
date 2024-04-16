@@ -26,9 +26,9 @@
 <body>
 
     <!-- Spinner overlay -->
-    <div class="spinner-overlay">
+    <!-- <div class="spinner-overlay">
       <div class="spinner"></div>
-  </div>
+  </div> -->
 
     <nav id="desktop-nav">
         <div class="logo"><a href="index.html">Jossel Rempis</a></div>
@@ -182,27 +182,96 @@
 
       <section class="projects" id="projects">
 
+        <h1 class="page-title">Projects</h1>
+        
+
         <div class="project-container">
 
-        <div class="projects-text">
-          <h1>Project</h1>
-        </div>
+        <div class="project-img">
+          <img src="/img/kapenista1.png" alt="" id="project-image">
+          <div class="icon">
+            <a href="YOUR_GITHUB_LINK_HERE" class="github-text">
+              <i class="bx bxl-github"></i> GitHub
+          </a>
+          <a href="https://kapenista-ecommerce-test.000webhostapp.com/?fbclid=IwAR2E4mGzbhzXN-pBaI1We0fVbzMq7s7WxqHFyROmpWHD4Izcewy7DFQjkb8" class="link-text">
+              <i class='bx bx-link-external'></i> View
+          </a>
+          
+         </div>
+      </div>
 
         <div class="project-img">
+          <div class="image-container">
           <img src="/img/kapenista1.png" alt="">
         </div>
-        <div class="icon">
-          <span><i class='bx bxl-github'></i></span>
-        </div>
+          <div class="icon">
+            <a href="YOUR_GITHUB_LINK_HERE" class="github-text">
+              <i class="bx bxl-github"></i> GitHub
+          </a>
+          <a href="YOUR_VIEW_LINK_HERE" class="link-text">
+              <i class='bx bx-link-external'></i> View
+          </a>
+          
+         </div>
       </div>
+
+      <div class="project-img">
+        <img src="/img/kapenista1.png" alt="">
+        <div class="icon">
+          <a href="YOUR_GITHUB_LINK_HERE" class="github-text">
+            <i class="bx bxl-github"></i> GitHub
+        </a>
+        <a href="https://kapenista-ecommerce-test.000webhostapp.com/?fbclid=IwAR2E4mGzbhzXN-pBaI1We0fVbzMq7s7WxqHFyROmpWHD4Izcewy7DFQjkb8" class="link-text">
+            <i class='bx bx-link-external'></i> View
+        </a>
+        
+       </div>
+    </div>
+
+      <div class="project-img">
+        <img src="/img/kapenista1.png" alt="">
+        <div class="icon">
+          <a href="YOUR_GITHUB_LINK_HERE" class="github-text">
+            <i class="bx bxl-github"></i> GitHub
+        </a>
+        <a href="YOUR_VIEW_LINK_HERE" class="link-text">
+            <i class='bx bx-link-external'></i> View
+        </a>
+        
+       </div>
+    </div>
+
+      
+    </div>
+
+    <!-- Pop-up box -->
+<div class="popup-box" id="popupBox">
+  <!-- Content of the pop-up box -->
+  <div class="popup-content">
+      <h2>Project Details</h2>
+      <p>This is some content about the project. You can add any details you want to display in the pop-up box here.</p>
+  </div>
+</div>
 
       </section>
 
 
-   <script src="js/script.js"></script>
+   <!-- <script src="js/script.js"></script> -->
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script>
     AOS.init();
+  </script>
+  <script>
+    document.getElementById('project-image').addEventListener('click', function() {
+    document.getElementById('popupBox').style.display = 'block';
+});
+
+document.querySelector('.popup-box').addEventListener('click', function(e) {
+    if (e.target.classList.contains('popup-box')) {
+        document.getElementById('popupBox').style.display = 'none';
+    }
+});
+
   </script>
 </body>
 </html>
